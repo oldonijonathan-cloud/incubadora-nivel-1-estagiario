@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreamento de Pedido</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Rastrear Pedido</h1>
+
+        <form id="tracking-form">
+            <div class="form-group">
+                <label for="codigo-pedido">Código do pedido</label>
+                <input
+                    type="text"
+                    id="codigo-pedido"
+                    name="codigo-pedido"
+                    placeholder="Ex: BR123456789"
+                    required
+                >
+            </div>
+
+            <button type="submit">Rastrear</button>
+        </form>
+
+        <section id="resultado" aria-live="polite">
+            <h2>Status do Pedido</h2>
+            <p>Pedido: <span id="codigo-exibido">#BR123456789</span></p>
+            <p>Status: <span class="status">Em transporte - Previsão de entrega: 25/05/2026</span></p>
+
+            <div class="suporte-link">
+                <a href="/suporte" target="_blank">Problemas com seu pedido? Fale com o suporte</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
